@@ -1,0 +1,61 @@
+product_id,product_name,category,price
+1,Wireless Mouse,Electronics,25.99
+2,Wireless Keyboard,Electronics,45.50
+3,LED Monitor,Electronics,199.99
+4,Smartphone,Electronics,499.00
+5,Tablet,Electronics,249.99
+6,Laptop,Electronics,899.99
+7,Smartwatch,Electronics,159.99
+8,Phone Charger,Accessories,9.99
+9,Power Bank,Accessories,19.99
+10,Headphones,Electronics,59.99
+11,Portable Speaker,Electronics,35.00
+12,USB Cable,Accessories,5.99
+13,Wireless Earbuds,Electronics,99.00
+14,External Hard Drive,Electronics,79.99
+15,Smart Home Camera,Home,120.00
+16,LED Light Bulb,Home,12.99
+17,Coffee Maker,Home,49.99
+18,Vacuum Cleaner,Home,199.99
+19,Air Purifier,Home,150.00
+20,Refrigerator,Home,799.00
+21,Washing Machine,Home,499.99
+22,Microwave,Home,129.99
+23,Dishwasher,Home,399.99
+24,Electric Kettle,Home,29.99
+25,Smart Thermostat,Home,199.00
+26,Furniture Sofa,Home,399.00
+27,Office Chair,Furniture,120.00
+28,Desk,Furniture,200.00
+29,Bookshelf,Furniture,89.99
+30,Bed Frame,Furniture,249.99
+31,Air Conditioner,Home,350.00
+32,Fan,Home,49.99
+33,Guitar,Music,149.99
+34,Piano,Music,599.00
+35,Drum Kit,Music,299.99
+36,Violin,Music,149.00
+37,Electric Guitar,Music,259.99
+38,Ukulele,Music,39.99
+39,Art Supplies,Arts,19.99
+40,Canvas,Arts,15.99
+41,Paint Brushes,Arts,12.99
+42,Drawing Paper,Arts,9.99
+43,Camera,Photography,299.99
+44,Tripod,Photography,35.00
+45,Lens,Photography,250.00
+46,Camera Bag,Photography,79.99
+47,Car Tires,Automotive,120.00
+48,Car Battery,Automotive,89.99
+49,Oil Change Kit,Automotive,30.00
+50,Tool Kit,Automotive,49.99
+51,LED Flashlight,Outdoor,18.00
+52,Tent,Outdoor,79.99
+53,Hiking Boots,Outdoor,99.99
+54,Sleeping Bag,Outdoor,49.00
+55,Camping Stove,Outdoor,59.99
+56,Inflatable Kayak,Outdoor,349.00
+57,Camping Chair,Outdoor,29.99
+58,Portable Grill,Outdoor,49.99
+59,Barbecue Set,Outdoor,79.00
+60,Snorkel Gear,Outdoor,59.00

@@ -1,0 +1,77 @@
+version: 2
+
+models:
+  - name: dim_client
+    description: "Client dimension combining client, client_status, and client_type tables"
+    columns:
+      - name: client_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_product
+    description: "Product dimension with product details and pricing"
+    columns:
+      - name: product_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_payment
+    description: "Payment method dimension"
+    columns:
+      - name: payment_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fact_orders
+    description: "Fact table joining orders with order_product for granular sales data"
+    columns:
+      - name: order_product_id
+        description: "Primary key - one row per product per order"
+        data_tests:
+          - unique
+          - not_null
+      - name: client_id
+        description: "Foreign key to dim_client"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_client')
+              field: client_id
+      - name: product_id
+        description: "Foreign key to dim_product"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_id
+      - name: payment_id
+        description: "Foreign key to dim_payment"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_payment')
+              field: payment_id
+
+  - name: mart_monthly_sales
+    description: "Monthly aggregated sales metrics"
+
+  - name: mart_sales_by_category
+    description: "Sales metrics aggregated by product category"
+
+  - name: mart_sales_by_client_type
+    description: "Sales metrics aggregated by client type"
+
+  - name: mart_sales_by_client
+    description: "Sales metrics aggregated per individual client"
+
+  - name: mart_cube_category_month
+    description: "CUBE aggregation of sales by product category and month with subtotals"
+
+  - name: mart_cube_payment_status
+    description: "CUBE aggregation of sales by payment method and order status with subtotals"

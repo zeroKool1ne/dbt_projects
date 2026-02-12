@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: stg_client
+    description: "Staged client data from RAW.OLTP.client"
+    columns:
+      - name: client_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_client_status
+    description: "Staged client status lookup table"
+    columns:
+      - name: client_status_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_client_type
+    description: "Staged client type lookup table"
+    columns:
+      - name: client_type_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Staged orders data"
+    columns:
+      - name: order_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_order_product
+    description: "Staged order-product line items"
+    columns:
+      - name: order_product_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_product
+    description: "Staged product catalog"
+    columns:
+      - name: product_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_payment_method
+    description: "Staged payment method lookup table"
+    columns:
+      - name: payment_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null

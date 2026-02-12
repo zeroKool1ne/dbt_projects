@@ -1,0 +1,6 @@
+client_status_id,status_name
+1,Active
+2,Inactive
+3,Suspended
+4,Pending
+5,Deactivated

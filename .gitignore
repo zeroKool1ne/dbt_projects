@@ -1,0 +1,13 @@
+# Claude
+.claude/
+
+# Python virtual environment
+dbt-env/
+
+# macOS
+.DS_Store
+
+# dbt
+target/
+dbt_packages/
+logs/
